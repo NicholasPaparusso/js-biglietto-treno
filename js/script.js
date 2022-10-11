@@ -25,8 +25,10 @@ if(userAge <= 18){
 let fixedPrice = priceTicket.toFixed(2);
 
 console.log('input non valido' + validInput);
-document.getElementById('ticket').innerHTML =  `Il costo del biglietto sarà ${fixedPrice} €`;
 
-if(validInput = false){
+if(validInput === true){
+document.getElementById('ticket').innerHTML =  `Il costo del biglietto sarà ${fixedPrice} €`;
+}
+if(validInput === false){
   document.getElementById('error').innerHTML = `Ricaricare la pagina ed inserire nuovamente i dati, la informiamo che la distanza massima percorribile da questa destinazione è di 3000km`;
 }
