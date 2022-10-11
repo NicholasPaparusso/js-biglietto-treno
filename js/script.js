@@ -30,5 +30,5 @@ if(validInput === true){
 document.getElementById('ticket').innerHTML =  `Il costo del biglietto sarà ${fixedPrice} €`;
 }
 if(validInput === false){
-  document.getElementById('error').innerHTML = `Ricaricare la pagina ed inserire nuovamente i dati, la informiamo che la distanza massima percorribile da questa destinazione è di 3000km`;
+  document.getElementById('error').innerHTML = `Ricaricare la pagina ed inserire nuovamente i dati, la informiamo che la distanza massima percorribile da questa stazione è di 3000km`;
 }
