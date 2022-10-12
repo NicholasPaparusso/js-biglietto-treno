@@ -1,5 +1,5 @@
 //Assegnazione Variabili
-const nKm = parseInt(prompt('Inserire chilometri da percorrere?'));
+const nKm = parseInt(prompt('Inserire chilometri da percorrere'));
 const userAge = parseInt(prompt('Inserire età'));
 let validInput = true;
 
@@ -16,10 +16,12 @@ let priceTicket = nKm * priceKm;
 
 
 if(validInput){
-if(userAge <= 18){
-  priceTicket = priceTicket - priceTicket * discount_1;
+if(userAge < 18){
+  priceTicket = priceTicket * ( 1 - discount_1 );
 }else if (userAge >= 65){
-  priceTicket = priceTicket - priceTicket * discount_2;
+  priceTicket = priceTicket * (1 -discount_2);
+}else{
+
 }
 }
 let fixedPrice = priceTicket.toFixed(2);
